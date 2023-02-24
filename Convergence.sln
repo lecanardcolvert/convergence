@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33403.182
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "convergence-frontend", "Convergence-FrontEnd\convergence-frontend.esproj", "{B6D28A27-4304-4EED-BDAD-05087F2F1C08}"
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "convergence-frontend", "convergence-frontend\convergence-frontend.esproj", "{B6D28A27-4304-4EED-BDAD-05087F2F1C08}"
 	ProjectSection(ProjectDependencies) = postProject
 		{50A3D0DF-6B16-4223-9274-12D32CAEEEA5} = {50A3D0DF-6B16-4223-9274-12D32CAEEEA5}
 	EndProjectSection
