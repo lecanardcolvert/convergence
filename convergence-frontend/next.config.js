@@ -1,3 +1,11 @@
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+    i18n: {
+        locales: ["fr"],
+        defaultLocale: "fr",
+    },
+}
+
 module.exports = {
   async rewrites() {
     return [
@@ -8,3 +16,5 @@ module.exports = {
     ];
   },
 };
+
+module.exports = nextConfig;
