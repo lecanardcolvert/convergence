@@ -1,0 +1,6 @@
+# Supprimer la ligne ci-dessous si vous voulez hériter les paramètres .editorconfig des répertoires supérieurs
+root = true
+
+# Encodage
+[*]
+charset = utf-8
