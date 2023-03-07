@@ -1,14 +1,16 @@
-﻿import { useState } from 'react'
+import { useState } from 'react'
 import { Menu } from 'semantic-ui-react'
 import Image from "next/image"
 import Link from "next/link"
+import { useRouter } from "next/router"
 
 export default function TopNavBar() {
     const [activeItem, setActiveItem] = useState("home")
     const handleItemClick = (e, { name }) => setActiveItem(name);
+    const router = useRouter();
 
     return (
-        <nav className="_top-nav-bar">
+      <nav className="_top-nav-bar">
             <Menu size="large" stackable>
                 <Menu.Item header>
                     <Image
@@ -24,7 +26,7 @@ export default function TopNavBar() {
                     as={Link}
                     href="/"
                     name='home'
-                    active={activeItem === 'home'}
+                    active={router.pathname == "/" ? true : false}
                     onClick={handleItemClick}>
                     Accueil
                 </Menu.Item>
@@ -32,7 +34,7 @@ export default function TopNavBar() {
                     as={Link}
                     href="/events"
                     name='events'
-                    active={activeItem === 'events'}
+                    active={router.pathname == "/events" ? true : false}
                     onClick={handleItemClick}>
                     Événements
                 </Menu.Item>
