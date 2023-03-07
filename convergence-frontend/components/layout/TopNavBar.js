@@ -10,7 +10,7 @@ export default function TopNavBar() {
     const router = useRouter();
 
     return (
-      <nav className="_top-nav-bar">
+        <nav className="_top-nav-bar">
             <Menu size="large" stackable>
                 <Menu.Item header>
                     <Image

@@ -1,7 +1,28 @@
+/*
+    BEM naming convention
+    Block, Elements, Modifiers
+
+    Elements : Add two underscores, followed by the element name (stick-man__head)
+    Modifiers : Add two hyphens, followed by the modifier name (stick-man--red)
+    Both elements and modifiers : Add both (stick-man__head--small
+*/
+
 :root {
-    margin: 1em
+    margin: 1em;
 }
 
 ._top-nav-bar {
-    margin-bottom: 1em
+    margin-bottom: 2em;
+}
+
+._layout__content {
+    margin-bottom: 2em;
+}
+
+._event-card:hover {
+    background-color: lightgrey!important;
+}
+
+._event__datetime {
+    font-weight: bold;
 }
